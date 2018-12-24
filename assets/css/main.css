@@ -3506,6 +3506,20 @@ input, select, textarea {
 
 		}
 
+		@media screen and (max-width: 480px) {
+
+			#banner .inner {
+				display: block;
+			}
+
+			#banner .image {
+				margin: 0 0 1em 0 !important;
+				max-width: 85%;
+				width: 12em;
+			}
+
+		}
+
 		body.is-preload #banner .logo {
 			-moz-transform: translateY(0.5em);
 			-webkit-transform: translateY(0.5em);
