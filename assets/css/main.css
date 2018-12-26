@@ -99,16 +99,31 @@ input, select, textarea {
 	}
 
 	body { 
-		/* This will be the background for the main page on very large
-		devices. On smaller devides the individual elements get their 
-		own background images, and on other pages the background image
-		is set at the bottom */
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.4), rgba(46, 49, 65, 0.4)), url("../../images/gas.png");
 		background-size: auto, cover;
 		background-attachment: fixed, fixed;
 		background-position: center, center;
 	}
+
+		body.research{
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.4), rgba(46, 49, 65, 0.4)), url("../../images/gas_2.png");
+		}
+		
+		body.outreach{
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/gas.png");
+		}
+		
+		body.code{
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/title_dm.png");
+		}
+		
+		body.aboutme{
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/pic03.jpg");
+		}
+		
+		body.index{
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/gas.png");
+		}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -3464,10 +3479,10 @@ input, select, textarea {
 
 			#banner {
 				padding: 7em 0 8.25em 0 ;
-				background-color: #2e3141;
+				/* background-color: #2e3141;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.4), rgba(46, 49, 65, 0.4)), url("../../images/gas.png");
 				background-size: auto, cover;
-				background-position: center, center;
+				background-position: center, center; */
 				margin-bottom: -6.5em;
 			}
 
@@ -3593,12 +3608,12 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
-			background-color: #2e3141;
+			/* background-color: #2e3141;
 			background-image: url("../../images/pic07.jpg");  
 			/* ^ should not appear, since the individual pages apply
 			their own rules */
-			background-size: auto, cover;
-			background-position: center, 0% 30%;
+			/* background-size: auto, cover;
+			background-position: center, 0% 30%; */
 			margin-bottom: -6.5em;
 		}
 
@@ -4083,10 +4098,10 @@ input, select, textarea {
 	@media screen and (max-width: 1280px) {
 
 		#footer {
-			background-color: #2e3141;
+			/* background-color: #2e3141;
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/title_dm.png");
 			background-size: auto, cover;
-			background-position: center, center;
+			background-position: center, center; */
 			margin-top: -6.5em;
 			padding-top: 6.5em;
 		}
@@ -4166,23 +4181,7 @@ input, select, textarea {
 
 	}
 
-body.research{
-	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.4), rgba(46, 49, 65, 0.4)), url("../../images/gas_2.png");
-}
-
-body.outreach{
-	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/gas.png");
-}
-
-body.code{
-	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/title_dm.png");
-}
-
-body.aboutme{
-	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/pic03.jpg");
-}
-
-@media screen and (max-width: 1280px) {
+/* @media screen and (max-width: 1280px) {
 	#wrapper > header.research{
 		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.4), rgba(46, 49, 65, 0.4)), url("../../images/gas_2.png") !important;
 	}
@@ -4198,4 +4197,4 @@ body.aboutme{
 	#wrapper > header.aboutme{
 		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/pic03.jpg") !important;
 	}
-}
+} */
