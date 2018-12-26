@@ -4018,11 +4018,9 @@ input, select, textarea {
 			}
 
 			.wrapper.spotlight .image {
-				margin: 0 0 1em 0 !important;
-				max-width: 85%;
-				width: 12em;
+				display: none;
 			}
-
+			
 		}
 
 		@media screen and (max-width: 360px) {
