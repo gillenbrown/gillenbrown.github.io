@@ -3360,7 +3360,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		padding: 10em 0 4.75em 0 ;
+		padding: 7em 0 4em 0 ;
 	}
 
 		#banner .inner {
@@ -3491,7 +3491,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#banner {
-				padding: 12em 3em 12.375em 3em ;
+				padding: 6em 3em 5em 1em ;
 				margin-bottom: -4.75em;
 			}
 
@@ -4020,7 +4020,7 @@ input, select, textarea {
 			.wrapper.spotlight .image {
 				display: none;
 			}
-			
+
 		}
 
 		@media screen and (max-width: 360px) {
