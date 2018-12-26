@@ -3363,16 +3363,15 @@ input, select, textarea {
 
 		#banner .image {
 			border-radius: 100%;
-			margin: 0 3em 2em 0;
-			width: 30em;
+			margin: 0 0 2em 2em;
+			width: 25em;
 			overflow: hidden;
-			-ms-flex: 1;
+			-ms-flex: 0;
 		}
 
 			#banner .image img {
 				border-radius: 100%;
 				width: 100%;
-				-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, -moz-filter 0.25s ease;
 			}
 
 		#banner .content {
@@ -3427,6 +3426,7 @@ input, select, textarea {
 			font-size: 2.25em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
+			text-align: right;
 		}
 
 		#banner p {
@@ -3453,6 +3453,7 @@ input, select, textarea {
 			letter-spacing: 0.1em;
 			line-height: 2;
 			text-transform: uppercase;
+			text-align: right;
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -3497,7 +3498,7 @@ input, select, textarea {
 					}
 
 				#banner h2 {
-					font-size: 1.5em;
+					font-size: 1.3em;
 				}
 
 				#banner p {
@@ -3513,9 +3514,14 @@ input, select, textarea {
 			}
 
 			#banner .image {
-				margin: 0 0 1em 0 !important;
+				display: block;
+				margin: 0 auto !important;
 				max-width: 85%;
 				width: 12em;
+			}
+
+			#banner h2, #banner p{
+				text-align: center;
 			}
 
 		}
