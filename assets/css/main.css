@@ -98,9 +98,13 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {
+	body { 
+		/* This will be the background for the main page on very large
+		devices. On smaller devides the individual elements get their 
+		own background images, and on other pages the background image
+		is set at the bottom */
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.1)), url("../../images/pic01.jpg");
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.4), rgba(46, 49, 65, 0.4)), url("../../images/gas.png");
 		background-size: auto, cover;
 		background-attachment: fixed, fixed;
 		background-position: center, center;
@@ -3590,7 +3594,9 @@ input, select, textarea {
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/gas_2.png");
+			background-image: url("../../images/pic07.jpg");  
+			/* ^ should not appear, since the individual pages apply
+			their own rules */
 			background-size: auto, cover;
 			background-position: center, 0% 30%;
 			margin-bottom: -6.5em;
@@ -4078,7 +4084,7 @@ input, select, textarea {
 
 		#footer {
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)), url("../../images/title_dm.png");
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/title_dm.png");
 			background-size: auto, cover;
 			background-position: center, center;
 			margin-top: -6.5em;
@@ -4160,18 +4166,36 @@ input, select, textarea {
 
 	}
 
-#research-header{
-	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/gas_2.png") !important;
+body.research{
+	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.4), rgba(46, 49, 65, 0.4)), url("../../images/gas_2.png");
 }
 
-#outreach-header{
-	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/gas.png") !important;
+body.outreach{
+	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/gas.png");
 }
 
-#code-header{
-	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/title_dm.png") !important;
+body.code{
+	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/title_dm.png");
 }
 
-#aboutme-header{
-	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/pic03.jpg") !important;
+body.aboutme{
+	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/pic03.jpg");
+}
+
+@media screen and (max-width: 1280px) {
+	#wrapper > header.research{
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.4), rgba(46, 49, 65, 0.4)), url("../../images/gas_2.png") !important;
+	}
+
+	#wrapper > header.outreach{
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/gas.png") !important;
+	}
+
+	#wrapper > header.code{
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/title_dm.png") !important;
+	}
+
+	#wrapper > header.aboutme{
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/pic03.jpg") !important;
+	}
 }
