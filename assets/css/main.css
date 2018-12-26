@@ -3479,10 +3479,6 @@ input, select, textarea {
 
 			#banner {
 				padding: 7em 0 8.25em 0 ;
-				/* background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.4), rgba(46, 49, 65, 0.4)), url("../../images/gas.png");
-				background-size: auto, cover;
-				background-position: center, center; */
 				margin-bottom: -6.5em;
 			}
 
@@ -3597,7 +3593,6 @@ input, select, textarea {
 		}
 
 		#wrapper > header h2 {
-			/* border-bottom: solid 2px rgba(255, 255, 255, 0.125); */
 			font-size: 2em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
@@ -3616,12 +3611,6 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
-			/* background-color: #2e3141;
-			background-image: url("../../images/pic07.jpg");  
-			/* ^ should not appear, since the individual pages apply
-			their own rules */
-			/* background-size: auto, cover;
-			background-position: center, 0% 30%; */
 			margin-bottom: -6.5em;
 		}
 
@@ -4104,10 +4093,6 @@ input, select, textarea {
 	@media screen and (max-width: 1280px) {
 
 		#footer {
-			/* background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/title_dm.png");
-			background-size: auto, cover;
-			background-position: center, center; */
 			margin-top: -6.5em;
 			padding-top: 6.5em;
 		}
@@ -4186,21 +4171,3 @@ input, select, textarea {
 		}
 
 	}
-
-/* @media screen and (max-width: 1280px) {
-	#wrapper > header.research{
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.4), rgba(46, 49, 65, 0.4)), url("../../images/gas_2.png") !important;
-	}
-
-	#wrapper > header.outreach{
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/gas.png") !important;
-	}
-
-	#wrapper > header.code{
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/title_dm.png") !important;
-	}
-
-	#wrapper > header.aboutme{
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/pic03.jpg") !important;
-	}
-} */
