@@ -3386,6 +3386,14 @@ input, select, textarea {
 			width: 25em;
 			overflow: hidden;
 			-ms-flex: 0;
+			-moz-transition: opacity 1s ease, -moz-transform 0.5s ease;
+			-webkit-transition: opacity 1s ease, -webkit-transform 0.5s ease;
+			-ms-transition: opacity 1s ease, -ms-transform 0.5s ease;
+			transition: opacity 1s ease, transform 0.5s ease;
+			-moz-transform: translateY(0);
+			-webkit-transform: translateY(0);
+			-ms-transform: translateY(0);
+			transform: translateY(0);
 		}
 
 			#banner .image img {
@@ -3432,10 +3440,6 @@ input, select, textarea {
 			-webkit-transform: translateX(0);
 			-ms-transform: translateX(0);
 			transform: translateX(0);
-			-moz-transition-delay: 0.65s;
-			-webkit-transition-delay: 0.65s;
-			-ms-transition-delay: 0.65s;
-			transition-delay: 0.65s;
 			-moz-filter: blur(0);
 			-webkit-filter: blur(0);
 			-ms-filter: blur(0);
@@ -3457,10 +3461,6 @@ input, select, textarea {
 			-webkit-transform: translateX(0);
 			-ms-transform: translateX(0);
 			transform: translateX(0);
-			-moz-transition-delay: 0.8s;
-			-webkit-transition-delay: 0.8s;
-			-ms-transition-delay: 0.8s;
-			transition-delay: 0.8s;
 			-moz-filter: blur(0);
 			-webkit-filter: blur(0);
 			-ms-filter: blur(0);
@@ -3546,6 +3546,14 @@ input, select, textarea {
 		}
 
 		body.is-preload #banner .logo {
+			-moz-transform: translateY(0.5em);
+			-webkit-transform: translateY(0.5em);
+			-ms-transform: translateY(0.5em);
+			transform: translateY(0.5em);
+			opacity: 0;
+		}
+
+		body.is-preload #banner .image {
 			-moz-transform: translateY(0.5em);
 			-webkit-transform: translateY(0.5em);
 			-ms-transform: translateY(0.5em);
