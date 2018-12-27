@@ -3374,15 +3374,15 @@ input, select, textarea {
 			-webkit-align-items: center;
 			-ms-align-items: center;
 			align-items: center;
-			-moz-flex-direction: row;
-			-webkit-flex-direction: row;
-			-ms-flex-direction: row;
-			flex-direction: row;
+			-moz-flex-direction: row-reverse;
+			-webkit-flex-direction: row-reverse;
+			-ms-flex-direction: row-reverse;
+			flex-direction: row-reverse;
 		}
 
 		#banner .image {
 			border-radius: 100%;
-			margin: 0 0 2em 2em;
+			margin: 0 2em 0 2em;
 			width: 25em;
 			overflow: hidden;
 			-ms-flex: 0;
@@ -3449,7 +3449,7 @@ input, select, textarea {
 			font-size: 2.25em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
-			text-align: right;
+			text-align: left;
 		}
 
 		#banner p {
@@ -3472,7 +3472,7 @@ input, select, textarea {
 			letter-spacing: 0.1em;
 			line-height: 2;
 			text-transform: uppercase;
-			text-align: right;
+			text-align: left;
 		}
 
 		@media screen and (max-width: 1280px) {
