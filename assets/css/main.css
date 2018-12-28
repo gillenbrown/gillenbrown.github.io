@@ -4047,7 +4047,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer .inner {
-		padding: 0.5em 0 2em 0 ;
+		padding: 1.5em 0 2em 0 ;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
