@@ -100,6 +100,7 @@ input, select, textarea {
 
 	body { 
 		background-color: #2e3141;
+		/* First values are for the gradient, second for the image */
 		background-size: auto, cover;
 		background-attachment: fixed, fixed;
 		background-position: center, center;
