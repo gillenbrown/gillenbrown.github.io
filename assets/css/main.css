@@ -121,6 +121,10 @@ input, select, textarea {
 		body.aboutme{
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/pic03.jpg");
 		}
+
+		body.cv{
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/pic07.png");
+		}
 		
 		body.index{
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/gas.png");
