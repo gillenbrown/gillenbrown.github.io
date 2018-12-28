@@ -296,7 +296,7 @@ input, select, textarea {
 	}
 
 	h3 {
-		font-size: 0.9em;
+		font-size: 1.1em;
 	}
 
 	h4 {
@@ -312,10 +312,6 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 736px) {
-
-		h2 {
-			font-size: 1em;
-		}
 
 		h3 {
 			font-size: 0.8em;
@@ -386,6 +382,10 @@ input, select, textarea {
 
 	.align-right {
 		text-align: right;
+	}
+
+	.mono{
+		font-family: "Courier New", monospace;
 	}
 
 /* Row */
@@ -2663,7 +2663,7 @@ input, select, textarea {
 		ul.contact li {
 			text-decoration: none;
 			margin: 2.5em 0 0 0;
-			padding: 0 0 0 3.25em;
+			padding: 0 0 0 2.75em;
 			position: relative;
 		}
 
@@ -4047,7 +4047,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer .inner {
-		padding: 5em 0 3em 0 ;
+		padding: 0.5em 0 2em 0 ;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -4062,6 +4062,7 @@ input, select, textarea {
 		flex-wrap: wrap;
 		margin: 0 auto;
 		width: 55em;
+		color: rgba(255, 255, 255, 0.65);
 	}
 
 		#footer .inner > * {
@@ -4075,19 +4076,22 @@ input, select, textarea {
 
 		#footer .inner .contact {
 			width: calc(50% - 1.5em);
+			margin: 0 0 1em 0;
+		}
+
+		#footer .inner a{
+			color: inherit;
 		}
 
 		#footer .inner .copyright {
-			border-top: solid 2px rgba(255, 255, 255, 0.125);
 			list-style: none;
-			margin: 4em 0 2em 0;
-			padding: 2em 0 0 0;
+			margin: 0 0 2em 0;
+			padding-left: 0.6em;
 			width: 100%;
 		}
 
 			#footer .inner .copyright li {
 				border-left: solid 2px rgba(255, 255, 255, 0.125);
-				color: rgba(255, 255, 255, 0.35);
 				display: inline-block;
 				font-size: 0.9em;
 				line-height: 1;
@@ -4123,7 +4127,8 @@ input, select, textarea {
 		}
 
 			#footer .inner {
-				padding: 3em 3em 1em 3em ;
+				padding-left: 3em;
+				padding-right: 3em;
 				display: block;
 				width: 100%;
 			}
@@ -4135,11 +4140,6 @@ input, select, textarea {
 
 				#footer .inner .contact {
 					width: 100%;
-					margin: 0 0 4em 0;
-				}
-
-				#footer .inner .copyright {
-					margin: 4em 0 2em 0;
 				}
 
 	}
@@ -4152,14 +4152,11 @@ input, select, textarea {
 		}
 
 			#footer .inner {
-				padding: 2em 2em 0.1em 2em ;
+				padding-left: 2em
+				padding-right: 2em;
 			}
 
 				#footer .inner form {
-					margin: 0 0 3em 0;
-				}
-
-				#footer .inner .contact {
 					margin: 0 0 3em 0;
 				}
 
@@ -4170,7 +4167,6 @@ input, select, textarea {
 		#footer .inner .copyright li {
 			border-left: 0;
 			display: block;
-			margin: 1em 0 0 0;
 			padding-left: 0;
 		}
 
@@ -4183,7 +4179,8 @@ input, select, textarea {
 	@media screen and (max-width: 360px) {
 
 		#footer .inner {
-			padding: 2em 1.5em 0.1em 1.5em ;
+			padding-left: 1.5em;
+			padding-right: 1.5em ;
 		}
 
 	}
