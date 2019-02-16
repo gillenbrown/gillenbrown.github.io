@@ -113,7 +113,7 @@ input, select, textarea {
 		}
 		
 		body.outreach{
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.6), rgba(46, 49, 65, 0.6)), url("../../images/gas.png");
+			background-image: linear-gradient(to bottom, rgba(46, 49, 65, 0.5), rgba(46, 49, 65, 0.8)), url("../../images/unsplash_mw.jpg");
 		}
 		
 		body.code{
