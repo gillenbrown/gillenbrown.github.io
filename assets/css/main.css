@@ -105,7 +105,11 @@ input, select, textarea {
 		-webkit-background-size: auto, cover;
 		-moz-background-size: auto, cover;
 		background-attachment: fixed, fixed;
+		-webkit-background-attachment: fixed, fixed;
+		-moz-background-attachment: fixed, fixed;
 		background-position: center, center;
+		-webkit-background-position: center, center;
+		-moz-background-position: center, center;
 	}
 
 		body.research{
