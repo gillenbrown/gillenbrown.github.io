@@ -4221,3 +4221,11 @@ input, select, textarea {
 	max-width: 8.5in;
 	max-height: 22in;
 }
+
+.audioWrapper{
+	margin-top: -1.5em;
+}
+
+.audioWrapper audio{
+	max-width: 100%;
+}
