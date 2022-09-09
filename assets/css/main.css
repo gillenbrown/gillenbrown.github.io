@@ -3256,3 +3256,27 @@ input, select, textarea {
 		width: 100%;
 		height: 100%;
 	}
+
+	p.todo{
+		color: #f00;
+	}
+
+	figure{
+		width: 100%;
+	}
+	
+	figure img{
+		width: 100%;
+	}
+
+	figure p{
+		width: 95%;
+		left: 5%;
+		font-size: 0.9em;
+		color: #999;
+		padding-left: 0.7em;
+		font-style: italic;
+		border-left-color: #999;
+		border-left-style: solid;
+		border-left-width: 0.13em;
+	}
