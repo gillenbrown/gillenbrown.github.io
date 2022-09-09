@@ -32,7 +32,7 @@
 						<p>On this page I'll describe some of the projects I've worked on. I'll start with a quick summary of each project, then below will have more detailed descriptions.</p>
 
 						<ul>
-						<li><a href="#star_cluster_radii">Measuring the Radii of Star Clusters</a>
+						<li><a href="#star_cluster_radii">Measuring the Radii of Star Clusters</a> - Using a Bayesian model, I measured the radii of star clusters seen by the Hubble Space Telescope, then fit the relation between cluster mass and radius.</li>
 						<li><a href="#simulations">Numerical Simulations of Galaxy Formation</a></li>
 						<li><a href="#ics">Improving the Computational Efficiency of Numerical Simulations of Galaxy Formation</a></li>
 						<li><a href="#rsz">Estimating the Redshift of Galaxy Clusters</a></li>
@@ -51,7 +51,7 @@
 							When stars form, most stars form along with many other newly-formed stars in what is known as a star cluster. These clusters contain anywhere from hundreds to millions of stars, and are some of the most beautiful objects in the night sky.
 						</p>
 						<p>
-							Since most stars form in clusters, measuring the properties of star clusters helps us understand the process of star formation. One of these key properties is the size of the cluster, quantified by its radius. The initial radius of the cluster is determined by how star formation happened, but then the radius can change with time. Measuring the radius of star clusters of a range of ages helps us understand both how star clusters form and evolve., To help answer these questions, I measured the radii of over 6,000 star clusters from 31 galaxies imaged by the Hubble Space Telescope (HST).
+							Since most stars form in clusters, measuring the properties of star clusters helps us understand the process of star formation. One of these key properties is the size of the cluster, quantified by its radius. The initial radius of the cluster is determined by how star formation happened, but then the radius can change with time. Measuring the radius of star clusters of a range of ages helps us understand both how star clusters form and evolve. To help answer these questions, I measured the radii of over 6,000 star clusters from 31 galaxies imaged by the Hubble Space Telescope (HST).
 						</p>
 						<p>
 							Since these clusters are in galaxies other than our home Milky Way galaxy, they are very far away and are only several pixels across, even when imaged by HST. Careful measurement procedures are therefore required to accurately measure their radii. In addition, star clusters are located within their host galaxies, which have their own complex internal structure. This can make it difficult to separate the light that belongs to the cluster from galactic contamination.  
@@ -64,7 +64,7 @@
 							<p>Figure 1 - An illustration of the measurement procedure I used to fit star cluster radii. The left panel shows a segment of an HST image with a star cluster at its center, while the middle panel shows the best fit model for this cluster. The right panel shows the residuals, calculated by subtracting the model image from the data and dividing by the pixel uncertainties (not shown). The best fit model is the one that minimizes the residuals.</p> 
 						</figure>
 						<p>
-							Figure 1 also illustrates how this pipeline was designed to be robust against contamination from other objects near the cluster. In the top left of the data image, there is another cluster. Clusters like these are automatically masked out so they do not contribute to the residual image. In the residual image, note how this other cluster does not appear. This ensures that the fit focuses only on the cluster of interest at the center of the image. The full details of the measurement procedure can be found in Section 2.4 of <a href="https://ui.adsabs.harvard.edu/link_gateway/2021MNRAS.508.5935B/PUB_HTML" target="_blank" rel="noopener noreferrer">the peer-reviewed paper</a>, which is also <a href="https://arxiv.org/abs/2106.12420" target="_blank" rel="noopener noreferrer">freely available on the arXiv.</a>  
+							Figure 1 also illustrates how this pipeline was designed to be robust against contamination from other objects near the cluster. In the top left of the data image, there is another cluster. Contaminating objects like these are automatically masked out so they do not contribute to the residual image. In the residual image, note how this other cluster does not appear. This ensures that the fit focuses only on the cluster of interest at the center of the image. The full details of the measurement procedure can be found in Section 2.4 of <a href="https://ui.adsabs.harvard.edu/link_gateway/2021MNRAS.508.5935B/PUB_HTML" target="_blank" rel="noopener noreferrer">the peer-reviewed paper</a>, which is also <a href="https://arxiv.org/abs/2106.12420" target="_blank" rel="noopener noreferrer">freely available on the arXiv.</a>  
 						</p>
 
 						<p>
@@ -72,7 +72,7 @@
 						</p>
 						<figure>
 							<img src="images/legus_mrr.png">
-							<p>Figure 2 - The relation between cluster mass and cluster radius. The blue data points shows individual clusters and their errors. The black lines shows the percentiles of the distribution at a given mass (e.g. 50 shows the running median). The solid green line shows the best fit relation, with the green shaded region showing the intrinsic scatter.</p>
+							<p>Figure 2 - The relation between cluster mass and cluster radius. The blue data points shows individual clusters and their errors. The black lines shows the percentiles of the distribution at a given mass (e.g. 50 shows the running median). The solid green line shows the best fit relation, with the green shaded region showing the intrinsic scatter (1 standard deviation).</p>
 						</figure>
 						<p>
 							While this simple model for fitting the mass-radius relation performs well, I also tested a hierarchical Bayesian model that included a correction for any potential clusters that would have been missed by the original survey that found the clusters I used. See the appendix of the paper (link above) for the full mathematical details. This more complex model produced results very similar to the simple model while being orders of magnitude more computationally expensive, so I used the simple model for all results in the paper.
@@ -86,7 +86,7 @@
 
 					<section>
 						<h2 id="simulations">Numerical Simulations of Galaxy Formation</h2>
-						<p>C, HPC stuff like Slurm, PBS, some parallelization. </p>
+						<p class="todo">C, HPC stuff like Slurm, PBS, some parallelization. </p>
 						<ul class="actions">
 							<li><a href="#top" class="button">Back to Top</a></li>
 							<li><a href="index.html" class="button">Back to Home</a></li>
