@@ -3280,3 +3280,10 @@ input, select, textarea {
 		border-left-style: solid;
 		border-left-width: 0.13em;
 	}
+
+	span.tt{
+		font-family: inherit;
+		/* Uncomment this to again format text */
+		/* font-family: monospace;
+		font-size: 0.9em; */
+	}
