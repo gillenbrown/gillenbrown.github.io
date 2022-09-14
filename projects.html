@@ -86,7 +86,21 @@
 
 					<section>
 						<h2 id="simulations">Numerical Simulations of Galaxy Formation</h2>
-						<p class="todo">C, HPC stuff like Slurm, PBS, some parallelization. </p>
+						<p>
+							Modern astronomical observatories have provided enormous amounts of data, which astronomers use to test theories about how the universe works. But for this process to work, theoretical models need to make concrete, testable predictions that can be compared to what we see in the real universe. One of the main ways astronomers create these testable predictions is through simulations. All the ingredients of a given model are put into a numerical simulation (often run on a supercomputer), then the results of this simulation can be compared to the real universe to tell us how close the model is to reality. 
+						</p>
+						<p>
+							As an example, theories of galaxy formation are commonly tested with numerical simulations. These simulations start with a region of the universe that is nearly uniformly filled with dark matter and cosmic gas. The equations of gravity and hydrodynamics are solved to determine how the universe evolves with time. As gravity draws the gas and dark matter together into galaxies, a set of rules determines where stars form within these galaxies. Once the stars do form, some explode as supernovae and reshape their surroundings. While of course there are many other details required to properly model galaxies, this basic picture does an excellent job of producing simulated galaxies that look very similar to galaxies in the real universe.
+						</p>
+						<p>
+							During my Ph.D., I ran my own suite of galaxy formation simulations. I started by adding some features to the existing 20-year-old simulations code, which is primarily written in C. These improvements allowed me to model more aspects of galaxy formation, both improving the realism of the simulations and opening up additional ways to compare the simulations to observations. I then ran a large suite of simulations on several different supercomputers, including Pleiades, Stampede2, and Frontera (the fastest supercomputer on a university campus in the world). Across these machines, I was awarded over 15 million CPU hours to run these simulations. The flagship simulations in this suite ran for approximately a year. 
+						</p>
+						<p class="todo">Add a visualization of the simulation</p>
+						<p>
+							Brief description of what my goals are with these simulations (summarize final paper)
+						</p>
+						<p class="todo">C, HPC stuff like Slurm, PBS, some parallelization. Also talk about analysis methods</p>
+						
 						<ul class="actions">
 							<li><a href="#top" class="button">Back to Top</a></li>
 							<li><a href="index.html" class="button">Back to Home</a></li>
