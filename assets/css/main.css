@@ -2157,6 +2157,7 @@ input, select, textarea {
 
 		ol li {
 			padding-left: 0.25em;
+			line-height: 1.25em;
 		}
 
 	ul {
@@ -2166,7 +2167,9 @@ input, select, textarea {
 	}
 
 		ul li {
+			padding-top: 0.7em;
 			padding-left: 0.5em;
+			line-height: 1.25em;
 		}
 
 		ul.alt {
@@ -2691,8 +2694,8 @@ input, select, textarea {
 
 		#main > section {
 			border-top: solid 2px #efefef;
-			margin: 4em 0 0 0;
-			padding: 4em 0 0 0;
+			margin: 0 0 0 0;
+			padding: 1em 0 0 0;
 		}
 
 			#main > section:first-child {
