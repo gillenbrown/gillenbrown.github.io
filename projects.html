@@ -131,7 +131,16 @@
 
 					<section>
 						<h2 id="rsz">Estimating the Redshift of Galaxy Clusters</h2>
-						<p>Add text. </p>
+						<p>
+							Galaxy clusters are collections of hundreds to thousands of galaxies, and are the largest objects in the universe (note that galaxy clusters are very different from star clusters). Galaxy clusters are found throughout the universe, and astronomers are constantly working to find more. Methods to detect clusters cannot easily determine their distance, which must be determined before clusters can be analyzed in detail. As there are large number of clusters to analyze, we need an inexpensive method to estimate their distance. 
+						</p>
+						<p>
+							<a href="https://github.com/gillenbrown/rsz/wiki" target="_blank" rel="noopener noreferrer">I developed such a method</a> to estimate the redshift (a proxy for distance) of galaxy clusters using only images in two filters. This method utilizes the galaxies in the cluster that belong to the "red sequence," which is a group of galaxies that have stopped forming stars. The typical color of this red sequence depends on the redshift of the cluster. My method identifies this red sequence, then determines the redshift that matches the color of this red sequence. This method only requires images of the cluster in two bands, which is much less expensive than other methods, allowing it to be used on a large number of galaxy clusters. 
+						</p>
+						<figure>
+							<img src="images/rsz_example_final.png">
+							<p>Figure 4 - An example of how the method estimates the redshift of a galaxy cluster. The x axis shows the brightness of galaxies in the cluster (increasing to the left), while the y axis shows color (bluer on the bottom, redder on the top). Data points show the color and brightness of galaxies in the cluster. Points colored red are identified by my code as red sequence members. The black line shows the expected red sequence at the best-fit redshift of 0.96, while the grey lines show the uncertainty range of this estimate. </p>
+						</figure>
 						<ul class="actions">
 							<li><a href="#top" class="button">Back to Top</a></li>
 							<li><a href="index.html" class="button">Back to Home</a></li>
