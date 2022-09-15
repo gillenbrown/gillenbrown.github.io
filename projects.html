@@ -36,7 +36,7 @@
 						<li><a href="#simulations">Numerical Simulations of Galaxy Formation</a></li>
 						<li><a href="#ics">Improving the Computational Efficiency of Numerical Simulations of Galaxy Formation</a></li>
 						<li><a href="#rsz">Estimating the Redshift of Galaxy Clusters</a></li>
-						<li><a href="#basketball">RENAME SOMETHING ABOUT BASKETBALL</a></li>
+						<li><a href="#basketball">Understanding Basketball Performance Data</a></li>
 						<li><a href="#betterplotlib"><span class="tt">betterplotlib</span></a> - A Python library making <span class="tt">matplotlib</span> plotting simpler. </li>
 						<li><a href="#library">A citation manager for astronomy</a> - An application built using Python and SQL that allows astronomers to easily organize the literature relevant to their research.</li> 
 						</ul>
@@ -148,8 +148,19 @@
 					</section>
 
 					<section>
-						<h2 id="basketball">RENAME SOMETHING ABOUT BASKETBALL</h2>
-						<p>Add text. </p>
+						<h2 id="basketball">Understanding Basketball Performance Data</h2>
+						<p>
+							In March of 2020, I entered a competition called "Basketball Data Madness Challenge" run by the University of Michigan Institute of Data Science. This competition used data from accelerometers worn by players on the University of Michigan basketball team during all team activities. The goal was to identify how this accelerometer data predicted game dynamics. My team, composed of me and three other astronomy Ph.D. students, looked at how various measurable outcomes of games (such as 3 point attempts, fouls, turnovers, etc.) depended on the player workload before the games and during the games. My team was one of the winners in this competition. 
+						</p>
+						<p>
+							As this competition only lasted two weeks and started right as COVID-19 was cancelling events across the US, my team kept it simple. We calculated the Spearman correlation coefficient between different measures of player workload data and various game outcomes. We then used bootstrapping to determine which correlation coefficients were significantly different from zero. Figure 5 below shows our results. Dark yellow and blue squares show correlations that are significant at more than 2 sigma. 
+						</p>
+						<figure>
+							<img src="images/basketball.png">
+							<p>Figure 5 - The significance of various correlations between basketball player workload data (right) and game outcomes (top). </p>
+						</figure>
+						<p>We found a few interesting outcomes, a few of which I'll highlight here. First, as post players work harder during the game, they get less defensive rebounds. We interpreted this as post players getting drawn away from the rim on defense, making them work hard to get out there and stopping them from getting rebounds. Second, the harder the team works during the game, the more three point attempts the opponent shoots, but at a lower percentage. We interpreted this as the team playing hard on defense, forcing the opponent into bad shots from the perimeter, as nothing else is available. Finally, we found that the workload of players the week before the game had no effect on game outcomes. Whether the team had a hard week or an easy one, game outcomes were similar. </p>
+						<p><a href="https://drive.google.com/file/d/1yTuY1vJKFcqAbXtAbaJfyfMjR_Row-D0/view?usp=sharing" target="_blank" rel="noopener noreferrer">Our full presentation can be found here.</a></p>
 						<ul class="actions">
 							<li><a href="#top" class="button">Back to Top</a></li>
 							<li><a href="index.html" class="button">Back to Home</a></li>
