@@ -33,10 +33,10 @@
 
 						<ul>
 						<li><a href="#star_cluster_radii">Measuring the Radii of Star Clusters</a> - Using a Bayesian model, I measured the radii of star clusters seen by the Hubble Space Telescope, then fit the relation between cluster mass and radius.</li>
-						<li><a href="#simulations">Numerical Simulations of Galaxy Formation</a></li>
-						<li><a href="#ics">Improving the Computational Efficiency of Numerical Simulations of Galaxy Formation</a></li>
-						<li><a href="#rsz">Estimating the Redshift of Galaxy Clusters</a></li>
-						<li><a href="#basketball">Understanding Basketball Performance Data</a></li>
+						<li><a href="#simulations">Numerical Simulations of Galaxy Formation</a> - I ran a suite of simulations of galaxy formation on several supercomputers, then analyzed the outputs (over 60 TB) to determine how different modeling choices affect the properties of star clusters. </li>
+						<li><a href="#ics">Improving the Computational Efficiency of Numerical Simulations of Galaxy Formation</a> - I developed a method to modify the setup of galaxy formation simulations to improve their performance.</li>
+						<li><a href="#rsz">Estimating the Redshift of Galaxy Clusters</a>- I developed a method to estimate the redshift (a proxy for distance) of galaxy clusters using data that is inexpensive to obtain. </li> 
+						<li><a href="#basketball">Understanding Basketball Performance Data</a> - I won a University of Michigan competition by investigating how the physical workload of UM basketball players correlated with game outcomes. </li>
 						<li><a href="#betterplotlib"><span class="tt">betterplotlib</span></a> - A Python library making <span class="tt">matplotlib</span> plotting simpler. </li>
 						<li><a href="#library">A citation manager for astronomy</a> - An application built using Python and SQL that allows astronomers to easily organize the literature relevant to their research.</li> 
 						</ul>
@@ -150,7 +150,7 @@
 					<section>
 						<h2 id="basketball">Understanding Basketball Performance Data</h2>
 						<p>
-							In March of 2020, I entered a competition called "Basketball Data Madness Challenge" run by the University of Michigan Institute of Data Science. This competition used data from accelerometers worn by players on the University of Michigan basketball team during all team activities. The goal was to identify how this accelerometer data predicted game dynamics. My team, composed of me and three other astronomy Ph.D. students, looked at how various measurable outcomes of games (such as 3 point attempts, fouls, turnovers, etc.) depended on the player workload before the games and during the games. My team was one of the winners in this competition. 
+							In March of 2020, I entered a competition called "Basketball Data Madness Challenge" run by the University of Michigan Institute of Data Science. This competition used data from accelerometers worn by players on the University of Michigan basketball team during all team activities. The goal was to identify how this accelerometer data predicted game dynamics. My team, composed of me and three other astronomy Ph.D. students, looked at how various measurable outcomes of games (such as 3 point attempts, fouls, turnovers, etc.) depended on how hard the players worked before the games and during the games. My team was one of the winners in this competition. 
 						</p>
 						<p>
 							As this competition only lasted two weeks and started right as COVID-19 was cancelling events across the US, my team kept it simple. We calculated the Spearman correlation coefficient between different measures of player workload data and various game outcomes. We then used bootstrapping to determine which correlation coefficients were significantly different from zero. Figure 5 below shows our results. Dark yellow and blue squares show correlations that are significant at more than 2 sigma. 
