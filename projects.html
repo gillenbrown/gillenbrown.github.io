@@ -110,7 +110,19 @@
 
 					<section>
 						<h2 id="ics">Improving the Computational Efficiency of Numerical Simulations of Galaxy Formation</h2>
-						<p>Add text. </p>
+						<p>
+							As described in the previous section, numerical simulations are a powerful tool for understanding galaxy formation. However, these simulations are extremely computationally expensive. As an example, my simulations ran for nearly a year on the Stampede2 supercomputer, even when running on 384 CPU cores in parallel. Improving the performance of these simulations helps science progress more quickly. A key way to improve the performance is to improve the parallelization, allowing the code to effectively utilize more CPU cores and therefore run more quickly. 
+						</p>
+						<p>
+							The details of how to do this depend on the specific simulation setup and code used. In my case, the simulation setup was giving the code difficulty. I used a setup known as a "zoom-in" initial condition, where a very large volume of the universe contains a small region of interest, often containing only one or two galaxies. The full simulation box is simulated at very low resolution, while the galaxy itself has much higher resolution that is required to accurately model galaxy formation. 
+						</p>
+						<p>
+							To parallelize the workload in runtime, the code assigns different regions of space to different CPUs. In this case, the very large volume of the entire simulation made it difficult for the code to evenly split the workload, which was almost entirely contained within the small region hosting the galaxies. This resulted in many CPUs with very little to do, making the code very inefficient and preventing it from scaling to a higher number of CPUs. 
+						</p>
+						<p>
+							To ameliorate this problem, I developed a method to regenerate the initial conditions of the simulation, significantly shrinking the box size. This allowed the code to divide the workload more efficiently, improving the speed of the simulation by up to a factor of two. Importantly, this method preserved the properties of the galaxies in the central region, which are often carefully selected to be similar to the Milky Way. This method allowed my simulations to progress faster than they would have otherwise, and without this speedup the results I discussed in the previous section would not have been possible. 
+						</p>
+						<p>The paper describing this method in detail <a href="https://ui.adsabs.harvard.edu/abs/2021NewA...8401501B/abstract" target="_blank" rel="noopener noreferrer">can be found here. </a></p>
 						<ul class="actions">
 							<li><a href="#top" class="button">Back to Top</a></li>
 							<li><a href="index.html" class="button">Back to Home</a></li>
