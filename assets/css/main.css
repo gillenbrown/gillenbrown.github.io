@@ -110,9 +110,11 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
 		color: #4b5387;
-		text-decoration: none;
+		/* border-bottom: dotted 1px; */
+		text-decoration: underline;
+		text-decoration-style: solid;
+		text-underline-offset: 0.1em;
 	}
 
 		a:hover {
