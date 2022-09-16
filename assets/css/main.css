@@ -110,8 +110,8 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		color: #4b5387;
 		/* border-bottom: dotted 1px; */
+		color: #6671b3;
 		text-decoration: underline;
 		text-decoration-style: solid;
 		text-underline-offset: 0.1em;
@@ -119,7 +119,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #4b5387 !important;
+			color: #6671b3 !important;
 			text-decoration: none;
 		}
 
@@ -1845,7 +1845,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #4b5387;
+			border-color: #6671b3;
 		}
 
 	select {
@@ -1950,7 +1950,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #4b5387;
+			border-color: #6671b3;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2473,8 +2473,8 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			border-color: #4b5387;
-			color: #4b5387 !important;
+			border-color: #6671b3;
+			color: #6671b3 !important;
 		}
 
 		input[type="submit"]:active,
@@ -2482,8 +2482,8 @@ input, select, textarea {
 		input[type="button"]:active,
 		.button:active {
 			background-color: rgba(73, 191, 157, 0.1);
-			border-color: #4b5387;
-			color: #4b5387 !important;
+			border-color: #6671b3;
+			color: #6671b3 !important;
 		}
 
 		input[type="submit"].icon,
@@ -2526,8 +2526,8 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #4b5387;
-			border-color: #4b5387;
+			background-color: #6671b3;
+			border-color: #6671b3;
 			color: #ffffff !important;
 		}
 
