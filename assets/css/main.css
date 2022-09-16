@@ -3242,8 +3242,28 @@ input, select, textarea {
 		width: 100%;
 		height: 100%;
 		max-width: 8.5in;
-		max-height: 22in;
+		max-height: 11in;
+		z-index: 1;
 	}
+	.docWrapper p{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+		width: 90%;
+		text-align: left;
+		animation: 1s fadeIn;
+  		animation-fill-mode: forwards;
+  		visibility: hidden;
+	}
+	@keyframes fadeIn {
+		99% {
+		  visibility: hidden;
+		}
+		100% {
+		  visibility: visible;
+		}
+	  }
 
 	.audioWrapper audio{
 		max-width: 100%;
