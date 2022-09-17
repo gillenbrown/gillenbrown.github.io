@@ -2602,7 +2602,7 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		/* background-image: url("images/overlay.png"), url("../../images/nordhouse.jpg"); */
+		/* background-image: url("images/overlay.png"), url("../../images/sidebar_bg.jpg"); */
 		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../../images/nordhouse.jpg");
 		background-position: top left,							center;
 		background-repeat: repeat,								no-repeat;
